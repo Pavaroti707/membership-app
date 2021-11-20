@@ -1,6 +1,6 @@
 const config = {
   env: process.env.NODE_ENV || "development",
-  port: process.env.PORT || 5000,
+  port: process.env.PORT || 4400,
   jwtSecret: process.env.JWT_SECRET || "YOUR_secret_key",
   mongoUrl:
     process.env.MONGODB_URL ||
