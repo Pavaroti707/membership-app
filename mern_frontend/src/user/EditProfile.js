@@ -80,7 +80,7 @@ const EditProfile = ({ match }) => {
         if (data && data.error) {
           setValues({ ...values, error: data.error });
         } else {
-          alert("Password changed!");
+          if (user.password !== undefined) alert("Pasword changed!");
           setValues({ ...values, userId: data._id, redirectToProfile: true });
         }
       }
